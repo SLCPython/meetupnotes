@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="en-us" />
+<title>/MEt0i42FxU</title>
+</head>
+<body>SLCPy September 10, 2014 -<br
+/><br
+/>Testing in Python w/Scott<br
+/><br
+/><ul><li>Intros - Name, Occupation, Something non-related you did this summer</li
+><li>New Zaniac Hours</li
+><li>New Zaniac programs</li
+><li>Teksystems shout out</li
+><li>Business:<ul><li>Non-profit?</li
+><li>Join triumph</li></ul
+></li
+><li>Think of a solution for how to select a random winner for a raffle&nbsp;</li
+><li>TODO: plan next 4 meetups <a href="http://www.meetup.com/Salt-Lake-City-Python-Web-Developers/">http://www.meetup.com/Salt-Lake-City-Python-Web-Developers/</a></li
+><li>Raffle</li
+><li>Chat/Cleanup<br/><br
+/></li></ul
+>All notes are archived on:<br
+/><a href="https://github.com/SLCPython/meetupnotes">https://github.com/SLCPython/meetupnotes</a><br
+/><br
+/><a href="http://enjigo.com/">http://enjigo.com/</a> -&gt; make space<br
+/><br
+/>&lt;hbar&gt;<br
+/><br
+/>New people desire to....<br
+/>* Syntax and best practices<br
+/>* Network with community.&nbsp;<br
+/>* Meet people who know how to code and network learning<br
+/><br
+/>&lt;hbar&gt;<br
+/><br
+/>To organize a DuPont Tour contact David Ernstrom at david.ernstrom@dupont.com<br
+/><br
+/>&lt;hbar&gt;<br
+/><b>&lt;h2&gt; Testing in Python &lt;/h2&gt;</b><br
+/>Ruminations on testing in general and python specifically<br
+/><br
+/><a href="https://github.com/eigenholser/jpeg_rename">https://github.com/eigenholser/jpeg_rename</a><br
+/><br
+/><a href="http://lab.hakim.se/reveal-js/#/">http://lab.hakim.se/reveal-js/#/</a> - tool Scott used to make his presentation<br
+/><br
+/>Unit testing&nbsp;<br
+/>* regression protection<br
+/>* helps to fill out what you need to build<br
+/><br
+/>types:<br
+/>* unit testing: testing units of code; making sure they function as designed<br
+/>* integration: across layers of code&nbsp;<br
+/>* code coverage: measure how much of your code is covered by tests<br
+/>* doctests: put tests inside your docstring<br
+/><br
+/>python tools:<br
+/>* unittest<br
+/>* pytest<br
+/>* nose<br
+/>* doctest<br
+/>* mock (part of the standard library in Python 3.4)<br
+/><br
+/>Approaches to testing:<br
+/>* test first<br
+/>* test last<br
+/>* test-driven development<br
+/>-&gt; use all, just test-last will be hurting<br
+/><br
+/>structure of a test:<br
+/>* arrange (setup)<br
+/>* act (call code to test)<br
+/>* assert (check results)<br
+/>write backwards<br
+/><br
+/><br
+/>On command line:<br
+/>pip install coverage # &lt;- for code coverage reporting<br
+/><br
+/>In code, to tell pytest to ignore a block for coverage:<br
+/># pragma : no cover&nbsp;<br
+/><br
+/>isolate your tests to avoid breakage from unrelated code changes<br
+/><br
+/>parametrized tests: cover multiple paths in your code with one test<br
+/><br
+/>doctests (command line or script):<br
+/>python -m doctest -v filename.py?<br
+/><br
+/>Brainstorm:<br
+/><ul><li>sphinx</li
+><li>workflow, environments, &amp; tools</li
+><li>group site work</li
+><li>python2 vs python3 -- also syntax and gotchas Dylan, October</li
+><li>angular in django</li
+><li>flask tutorial<br/><br
+/><br/><br
+/></li></ul
+><b>Appendix A: Docstrings</b><br
+/>Have built in documentation in python<br
+/><br
+/>def myfunction (a,b):<br
+/>&nbsp;&nbsp;&nbsp; """ Doc string for my function. Any text can go here.<br
+/>&nbsp;&nbsp;&nbsp;&nbsp;<br
+/>&nbsp;&nbsp;&nbsp; Parameters<br
+/>&nbsp;&nbsp;&nbsp; a : float<br
+/>&nbsp;&nbsp;&nbsp; b : float<br
+/>&nbsp;&nbsp;&nbsp;&nbsp;<br
+/>&nbsp;&nbsp;&nbsp; Returns<br
+/>&nbsp;&nbsp;&nbsp; c : float<br
+/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the sum&nbsp;<br
+/>&nbsp;&nbsp;&nbsp; """<br
+/>&nbsp;&nbsp;&nbsp; return a+b<br
+/><br
+/>&gt;&gt;&gt; help(myfunction) # this will give the string I defined, i.e. "Doc string for my function..."<br
+/>The string is stored in a hidden variable<br
+/>&gt;&gt;&gt; myfunction.__docstring__<br
+/><br
+/><a href="http://en.wikipedia.org/wiki/Docstring">http://en.wikipedia.org/wiki/Docstring</a><br
+/><a href="http://stackoverflow.com/questions/3898572/what-is-the-standard-python-docstring-format">http://stackoverflow.com/questions/3898572/what-is-the-standard-python-docstring-format</a><br
+/><br
+/><br
+/><b>Appendix B: Other Resources</b><br
+/>PyDanny on pytest: <a href="http://pydanny.com/pytest-no-boilerplate-testing.html">http://pydanny.com/pytest-no-boilerplate-testing.html</a><br
+/><br
+/></body>
+</html>
